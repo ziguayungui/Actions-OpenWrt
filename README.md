@@ -10,8 +10,8 @@ A template for building OpenWrt with GitHub Actions
 
 ## Usage
 
-- Click the [Use this template](https://github.com/P3TERX/Actions-OpenWrt/generate) button to create a new repository.
-- Generate `.config` files using [Lean's OpenWrt](https://github.com/coolsnowwolf/lede) source code. ( You can change it through environment variables in the workflow file. )
+- Click the [Use this template](https://github.com/ziguayungui/Actions-OpenWrt/generate) button to create a new repository.
+- Generate `.config` files using [6ang996's OpenWrt](https://github.com/6ang996/lede) source code. ( You can change it through environment variables in the workflow file. )
 - Push `.config` file to the GitHub repository.
 - Select `Build OpenWrt` on the Actions page.
 - Click the `Run workflow` button.
@@ -26,6 +26,7 @@ A template for building OpenWrt with GitHub Actions
 
 - [Microsoft Azure](https://azure.microsoft.com)
 - [GitHub Actions](https://github.com/features/actions)
+- [OpenWrt Actions](https://github.com/P3TERX/Actions-OpenWrt)
 - [OpenWrt](https://github.com/openwrt/openwrt)
 - [Lean's OpenWrt](https://github.com/coolsnowwolf/lede)
 - [tmate](https://github.com/tmate-io/tmate)
