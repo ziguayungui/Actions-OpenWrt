@@ -23,7 +23,8 @@ env:
   REPO_URL: https://github.com/6ang996/lede
   REPO_BRANCH: rk356x-xgp_support
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: openwrt/custom_config/rk3568_xgp_config
+  CUSTOM_CONFIG_FILE: openwrt/custom_config/rk3568_xgp_config
+  CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
@@ -77,6 +78,7 @@ jobs:
     - name: Load custom configuration
       run: |
         [ -e files ] && mv files openwrt/files
+        [ -e $CUSTOM_CONFIG_FILE ] && mv $CUSTOM_CONFIG_FILE openwrt/.config
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x $DIY_P2_SH
         cd openwrt
